@@ -8,7 +8,7 @@
 
 This project implements a complete **Data Warehouse (DW)** solution for **LibreSpace**, a bookstore management system. The solution uses **SQL Server** and follows dimensional modeling principles to enable business intelligence and analytics on book orders, inventory, suppliers, and sales data.
 
-### 📋 Features
+### Features
 
 - **Dimensional Data Warehouse Design**: Implements a star schema with fact and dimension tables
 - **Incremental ETL Process**: Automated Extract, Transform, Load processes with change tracking
@@ -17,7 +17,7 @@ This project implements a complete **Data Warehouse (DW)** solution for **LibreS
 - **Trigger-based Change Detection**: Database triggers to track modifications in source tables
 - **Staging Views**: Intermediate views for data transformation before loading into the data warehouse
 
-### 🏗️ Architecture
+### Architecture
 
 #### Source Database: `LibreSpaceTransacDB`
 Transactional database containing operational data for:
@@ -42,14 +42,14 @@ Transactional database containing operational data for:
 **Control Table:**
 - `LibreSpaceDW_ETLConfig`: Tracks last modification dates for incremental loading
 
-### 🔄 ETL Process
+### ETL Process
 
 1. **Change Detection**: Triggers on source tables update `DateModification` timestamp
 2. **Staging**: Views filter changed records since last ETL run
 3. **Loading**: MERGE statements handle INSERT and UPDATE operations
 4. **Tracking**: ETL config table updated with current timestamp
 
-### 🚀 Usage
+### Usage
 
 #### Prerequisites
 - Microsoft SQL Server (2016 or later recommended)
@@ -75,7 +75,7 @@ Simply re-execute the relevant sections of the script. The ETL process automatic
 - Inserts new records
 - Maintains historical data (for SCD Type 2 dimensions)
 
-### 📊 Sample Queries
+### Sample Queries
 
 The script includes analytical queries such as:
 - Books with multiple authors
@@ -88,7 +88,7 @@ The script includes analytical queries such as:
 - `Travail_individuel3_corrige.sql`: Complete SQL implementation
 - `Travail individuel no. 3 - Énoncé.pdf`: Project requirements document (French)
 
-### 🛠️ Technical Highlights
+### Technical Highlights
 
 - **Recursive CTEs** for date dimension population
 - **MERGE statements** for efficient upsert operations
@@ -105,7 +105,7 @@ The script includes analytical queries such as:
 
 Ce projet implémente une solution complète d'**entrepôt de données (ED)** pour **LibreSpace**, un système de gestion de librairie. La solution utilise **SQL Server** et suit les principes de modélisation dimensionnelle pour permettre l'intelligence d'affaires et l'analyse des commandes de livres, de l'inventaire, des fournisseurs et des données de ventes.
 
-### 📋 Fonctionnalités
+### Fonctionnalités
 
 - **Conception d'entrepôt de données dimensionnel**: Implémente un schéma en étoile avec tables de faits et de dimensions
 - **Processus ETL incrémental**: Processus automatisés d'extraction, transformation et chargement avec suivi des changements
@@ -114,7 +114,7 @@ Ce projet implémente une solution complète d'**entrepôt de données (ED)** po
 - **Détection des changements par déclencheurs**: Triggers de base de données pour suivre les modifications dans les tables sources
 - **Vues de staging**: Vues intermédiaires pour la transformation des données avant chargement
 
-### 🏗️ Architecture
+### Architecture
 
 #### Base de données source : `LibreSpaceTransacDB`
 Base de données transactionnelle contenant les données opérationnelles pour :
@@ -139,14 +139,14 @@ Base de données transactionnelle contenant les données opérationnelles pour :
 **Table de contrôle :**
 - `LibreSpaceDW_ETLConfig`: Suit les dates de dernière modification pour le chargement incrémental
 
-### 🔄 Processus ETL
+### Processus ETL
 
 1. **Détection des changements**: Les triggers sur les tables sources mettent à jour l'horodatage `DateModification`
 2. **Staging**: Les vues filtrent les enregistrements modifiés depuis la dernière exécution ETL
 3. **Chargement**: Les instructions MERGE gèrent les opérations INSERT et UPDATE
 4. **Suivi**: La table de configuration ETL est mise à jour avec l'horodatage actuel
 
-### 🚀 Utilisation
+### Utilisation
 
 #### Prérequis
 - Microsoft SQL Server (version 2016 ou ultérieure recommandée)
@@ -172,7 +172,7 @@ Simplement ré-exécuter les sections pertinentes du script. Le processus ETL au
 - Insère les nouveaux enregistrements
 - Maintient les données historiques (pour les dimensions SCD Type 2)
 
-### 📊 Requêtes d'exemple
+### Requêtes d'exemple
 
 Le script inclut des requêtes analytiques telles que :
 - Livres avec plusieurs auteurs
@@ -185,7 +185,7 @@ Le script inclut des requêtes analytiques telles que :
 - `Travail_individuel3_corrige.sql`: Implémentation SQL complète
 - `Travail individuel no. 3 - Énoncé.pdf`: Document des exigences du projet (français)
 
-### 🛠️ Points techniques saillants
+### Points techniques saillants
 
 - **CTEs récursifs** pour la population de la dimension date
 - **Instructions MERGE** pour des opérations upsert efficaces
@@ -196,7 +196,7 @@ Le script inclut des requêtes analytiques telles que :
 
 ---
 
-## 📝 License
+## License
 
 This project is part of academic coursework.
 
