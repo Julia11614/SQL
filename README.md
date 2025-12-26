@@ -123,28 +123,6 @@ The assignments work with the AdventureWorks2019 database, utilizing the followi
 - `Person.Person` - Individual person records
 - `Person.BusinessEntity` - Business entity information
 
-## Usage Instructions
-
-### Prerequisites
-
-- Microsoft SQL Server (2016 or later)
-- AdventureWorks2019 database installed and configured
-- SQL Server Management Studio (SSMS) or compatible query tool
-
-### Running the Scripts
-
-1. Ensure AdventureWorks2019 database is properly installed
-2. Open the desired SQL file in SSMS or your preferred SQL client
-3. Execute individual queries or run the entire script
-4. Review results and verify output matches expected format
-
-### Notes
-
-- All monetary values are displayed in US Dollars
-- Date formats follow SQL Server standards
-- Queries are optimized for the AdventureWorks2019 schema
-- Some queries include data formatting for presentation purposes
-
 ## Learning Outcomes
 
 Through these assignments, the following competencies were developed:
@@ -157,10 +135,6 @@ Through these assignments, the following competencies were developed:
 - Implementing data validation and error handling
 - Optimizing query performance
 - Translating business requirements into SQL logic
-
-## Author
-
-Julia11614
 
 ## License
 
