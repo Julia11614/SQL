@@ -1,7 +1,7 @@
 /*
  *		TECH.20712 -- Database Management
  *		
- *		HEC Montréal,
+ *		HEC MontrÃ©al,
  *		Practical Assignment 4
  *		
  */
@@ -98,7 +98,7 @@ HAVING soh.SubTotal >
 AdventureWorks knows that its product documentation needs to be improved.
 The production director asks you to extract the names of employees responsible
 for products that have associated documents.
-The query should return each employee’s name (last name from the Person table)
+The query should return each employeeâ€™s name (last name from the Person table)
 and the number of products under their responsibility for which documentation exists.
 */
 
