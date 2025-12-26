@@ -1,7 +1,7 @@
 /*
  *		TECH220712 -- Database Management														
  *		
- *		HEC Montréal, Fall 2023
+ *		HEC MontrÃ©al, Fall 2023
  *		Practical Assignment 3	
  *		
  *		
